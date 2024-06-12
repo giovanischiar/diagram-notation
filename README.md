@@ -77,6 +77,7 @@ data class Address(
 ```
 
 ### Aggregation With List
+## Kotlin
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/dark/aggregation-list.dark.svg">
   <img alt="Aggregation With List Diagram" src="./res/aggregation-list.light.svg">
@@ -86,6 +87,18 @@ data class Address(
 data class Region(
    private val holes : List<Polygon>
 )
+```
+
+## Swift
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/aggregation-list-swift.dark.svg">
+  <img alt="Aggregation With List Diagram Swift" src="./res/aggregation-list-swift.light.svg">
+</picture>
+
+```swift
+struct Region {
+  let holes: [Polygon]
+}
 ```
 
 ### Composition With Mutable Map
