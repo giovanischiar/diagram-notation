@@ -7,9 +7,9 @@
   - [Implementation](#implementation)
   - [Aggregation](#aggregation)
   - [Composition](#composition)
-  - [Aggregation With List](#aggregation-with-list)
-  - [Composition With Mutable Map](#composition-with-mutable-map)
-  - [Composition With Pair of Set](#Composition-with-pair-of-set)
+  - [Aggregation With `List`](#aggregation-with-list)
+  - [Composition With `Mutable Map`](#composition-with-mutable-map)
+  - [Composition With `Pair` of `Set`](#Composition-with-pair-of-set)
 - [Swift](#swift)
   - [Diagram Elements](#diagram-elements-swift)
   - [Method Calling](#method-calling-swift)
@@ -17,8 +17,8 @@
   - [Implementation](#implementation-swift)
   - [Aggregation](#aggregation-swift)
   - [Composition](#composition-swift)
-  - [Aggregation With Array](#aggregation-with-array)
-  - [Composition With AnyPublisher of an Array of Pair](#composition-With-AnyPublisher-of-an-array-of-pair)
+  - [Aggregation With `Array`](#aggregation-with-array)
+  - [Composition With `AnyPublisher` of an `Array` of `Pair`](#composition-With-AnyPublisher-of-an-array-of-pair)
 
 # Kotlin
 ## Diagram Elements
@@ -102,7 +102,7 @@ data class Address(
 )
 ```
 
-## Aggregation With List
+## Aggregation With `List`
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/aggregation-list.dark.svg">
   <img alt="Aggregation With List Diagram" src="./res/kotlin/aggregation-list.light.svg">
@@ -114,7 +114,7 @@ data class Region(
 )
 ```
 
-## Composition With Mutable Map
+## Composition With `Mutable Map`
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/composition-mutable-map.dark.svg">
   <img alt="Composition With Mutable Map Diagram" src="./res/kotlin/composition-mutable-map.light.svg">
@@ -126,7 +126,7 @@ class MainRepository {
 }
 ```
 
-## Composition With Pair of Set
+## Composition With `Pair` of `Set`
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/composition-pair-set.dark.svg">
   <img alt="Composition With Pair of Set Diagram" src="./res/kotlin/composition-pair-set.light.svg">
@@ -221,7 +221,7 @@ struct MessageViewData {
 }
 ```
 
-## Aggregation With Array
+## Aggregation With `Array`
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/aggregation-array.dark.svg">
   <img alt="Aggregation With List Diagram Swift" src="./res/swift/aggregation-array.light.svg">
@@ -233,7 +233,7 @@ struct Conversation {
 }
 ```
 
-## Composition With AnyPublisher of an Array of Pair
+## Composition With `AnyPublisher` of an `Array` of `Pair`
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/composition-anypublisher-array-of-pair.dark.svg">
   <img alt="Composition With AnyPublisher of an Array of Pair" src="./res/swift/composition-anypublisher-array-of-pair.light.svg">
