@@ -184,6 +184,11 @@ struct Navigation {
 ```
 
 ## Implementation (swift)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/implementation.dark.svg">
+  <img alt="Implementation Diagram" src="./res/swift/implementation.light.svg">
+</picture>
+
 ```swift
 class MessengerBluetoothDataSource: MessengerDataSource 
 ```
