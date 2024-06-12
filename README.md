@@ -55,18 +55,18 @@ class HomeViewModel @Inject constructor(private val homeRepository: HomeReposito
 
 @Composable
 fun NavGraphBuilder.administrativeUnitsScreen(/*..*/) {
-  val viewModel = hiltViewModel<AdministrativeUnitsViewModel>()
-  val administrativeUnitsUiState by viewModel
-    .administrativeUnitsUiStateFlow
-    .collectAsState(initial = AdministrativeUnitsUiState.Loading)
-  /*...*/
+    val viewModel = hiltViewModel<AdministrativeUnitsViewModel>()
+      val administrativeUnitsUiState by viewModel
+          .administrativeUnitsUiStateFlow
+          .collectAsState(initial = AdministrativeUnitsUiState.Loading)
+    /*...*/
 
-  AdministrativeUnitsScreen(
-    /*...*/
-    administrativeUnitsUiState = administrativeUnitUiState
-    onAdministrativeUnitPressedAt = viewModel::onAdministrativeUnitPressedAt
-    /*...*/
-  )
+    AdministrativeUnitsScreen(
+        /*...*/
+        administrativeUnitsUiState = administrativeUnitUiState
+        onAdministrativeUnitPressedAt = viewModel::onAdministrativeUnitPressedAt
+        /*...*/
+    )
 }
 ```
 
@@ -112,7 +112,7 @@ data class Region(
 
 ```kotlin
 data class Region(
-   private val holes : List<Polygon>
+    private val holes : List<Polygon>
 )
 ```
 
@@ -178,18 +178,18 @@ class ConversationsViewModel: ObservableObject {
 
 ```swift
 struct Navigation {
-  @EnvironmentObject var conversationViewModel: ConversationViewModel
-  /*...*/
-
-  var body: some View {
+    @EnvironmentObject var conversationViewModel: ConversationViewModel
     /*...*/
-    let conversationsScreen = ConversationsScreen(
-        contactWithLastMessageListUIState: $conversationsViewModel
-            .contactWithLastMessageListUIState,
+
+    var body: some View {
         /*...*/
-        selectConversationWith: conversationsViewModel.selectConversation(with:),
-      )
-  }
+        let conversationsScreen = ConversationsScreen(
+            contactWithLastMessageListUIState: $conversationsViewModel
+                .contactWithLastMessageListUIState,
+            /*...*/
+            selectConversationWith: conversationsViewModel.selectConversation(with:),
+        )
+    }
 }
 ```
 
