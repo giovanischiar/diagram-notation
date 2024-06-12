@@ -35,10 +35,10 @@
 </picture>
 
 ```kotlin
-class AppViewModel(private val repository: AppRepository) : ViewModel { 
-  /*...*/ 
-    suspend fun addURIs(uris: List<String>) {
-        repository.addURIs(uris = uris)
+@HiltViewModel
+class HomeViewModel @Inject constructor(private val homeRepository: HomeRepository) : ViewModel() {
+    fun addURIs(uris: List<String>) = viewModelScope.launch {
+        homeRepository.addURIs(uris = uris)
     }
 }
 ```
