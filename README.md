@@ -18,8 +18,7 @@
   - [Aggregation](#aggregation)
   - [Composition](#composition)
   - [Aggregation With Array](#aggregation-with-array)
-  - [Composition With Dictionary](#composition-with-mutable-map)
-  - [Composition With Pair of Set](#Composition-with-pair-of-set)
+  - [Composition With Publisher of Pair](#Composition-with-publisher-of-pair)
 
 # Kotlin
 ## Diagram Elements
@@ -50,12 +49,22 @@ class AppViewModel(private val repository: AppRepository) : ViewModel {
 </picture>
 
 ```kotlin
+// NavGraphBuilderExtension.kt
+
 @Composable
-fun HomeScreen(viewModel: HomeViewModel, /*...*/) {
+fun NavGraphBuilder.administrativeUnitsScreen(/*..*/) {
+  val viewModel = hiltViewModel<AdministrativeUnitsViewModel>()
+  val administrativeUnitsUiState by viewModel
+    .administrativeUnitsUiStateFlow
+    .collectAsState(initial = AdministrativeUnitsUiState.Loading)
   /*...*/
-  LaunchedEffect(Unit) { viewModel.subscribe() }
-  val addressLocationImages by viewModel.addressLocationImages.collectAsState()
-  /*...*/
+
+  AdministrativeUnitsScreen(
+    /*...*/
+    administrativeUnitsUiState = administrativeUnitUiState
+    onAdministrativeUnitPressedAt = viewModel::onAdministrativeUnitPressedAt
+    /*...*/
+  )
 }
 ```
 
@@ -138,13 +147,55 @@ class MainRepository {
 
 ## Method Calling
 
+```swift
+class ConversationsViewModel: ObservableObject {
+    private let conversationsRepository: ConversationsRepository
+
+    /*...*/
+
+    func selectContact(of id: String) {
+        /*...*/
+        conversationsRepository.selectContact(of: id)
+    }
+}
+```
+
 ## Screen/ViewModel Relationship
+```swift
+struct Navigation {
+  @EnvironmentObject var conversationViewModel: ConversationViewModel
+  /*...*/
+
+  var body: some View {
+    /*...*/
+    let conversationsScreen = ConversationsScreen(
+        contactWithLastMessageListUIState: $conversationsViewModel
+            .contactWithLastMessageListUIState,
+        /*...*/
+        selectConversationWith: conversationsViewModel.selectConversation(with:),
+      )
+  }
+}
+```
 
 ## Implementation
+```swift
+class MessengerBluetoothDataSource: MessengerDataSource 
+```
 
 ## Aggregation
+```swift
+struct Conversation {
+    let contact: Contact
+}
+```
 
 ## Composition
+```swift
+struct MessageViewData {
+    let id: UUID = UUID()
+}
+```
 
 ## Aggregation With Array
 <picture>
@@ -153,11 +204,16 @@ class MainRepository {
 </picture>
 
 ```swift
-struct Region {
-  let holes: [Polygon]
+struct Conversation {
+    var messages: [Message]
 }
 ```
 
-## Composition With Dictionary
-
-## Composition With Pair of Set
+## Composition With AnyPublisher of Pair
+```swift
+struct ConversationsRepository {
+    var contactWithLastMessageListPublisher: AnyPublisher<[(Contact, Message)], Never> {
+      /*...*/
+    }
+}
+```
