@@ -98,8 +98,8 @@ data class Region(
 </picture>
 
 ```kotlin
-data class Address(
-   private val administrativeUnit : AdministrativeUnit = CITY
+data class Region(
+    val active: Boolean = true
 )
 ```
 
