@@ -8,8 +8,8 @@
   - [Aggregation](#aggregation)
   - [Composition](#composition)
   - [Aggregation With `List`](#aggregation-with-list)
-  - [Composition With `Mutable Map`](#composition-with-mutable-map)
-  - [Composition With `Pair` of `Set`](#Composition-with-pair-of-set)
+  - [Composition With `Flow` of a `List`](#composition-with-flow-of-a-list)
+
 - [Swift](#swift)
   - [Diagram Elements](#diagram-elements-swift)
   - [Method Calling](#method-calling-swift)
@@ -87,7 +87,7 @@ class ImageRoomDataSource : ImageDataSource { /*...*/ }
 
 ```kotlin
 data class Region(
-   val boundingBox: BoundingBox
+    val boundingBox: BoundingBox
 )
 ```
 
@@ -115,27 +115,15 @@ data class Region(
 )
 ```
 
-## Composition With `Mutable Map`
+## Composition With `Flow` of a `List`
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/composition-mutable-map.dark.svg">
-  <img alt="Composition With Mutable Map Diagram" src="./res/kotlin/composition-mutable-map.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/composition-flow-list.dark.svg">
+  <img alt="Composition With Flow of a List" src="./res/kotlin/composition-flow-list.light.svg">
 </picture>
 
 ```kotlin
-class MainRepository {
-   private val locationAddress: MutableMap<Address, Location> = /*...*/
-}
-```
-
-## Composition With `Pair` of `Set`
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/composition-pair-set.dark.svg">
-  <img alt="Composition With Pair of Set Diagram" src="./res/kotlin/composition-pair-set.light.svg">
-</picture>
-
-```kotlin
-class MainRepository {
-   private val currentImages: Pair<Address, Set<Image>>? = /*...*/
+class AdministrativeUnitsRepository {
+    private var administrativeUnits: List<AdministrativeUnit> = emptyList()
 }
 ```
 
