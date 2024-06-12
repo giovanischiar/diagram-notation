@@ -204,8 +204,8 @@ struct MessageViewData {
 
 ## Aggregation With Array
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/aggregation-list.dark.svg">
-  <img alt="Aggregation With List Diagram Swift" src="./res/swift/aggregation-list.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/aggregation-array.dark.svg">
+  <img alt="Aggregation With List Diagram Swift" src="./res/swift/aggregation-array.light.svg">
 </picture>
 
 ```swift
