@@ -18,7 +18,7 @@
   - [Aggregation](#aggregation-swift)
   - [Composition](#composition-swift)
   - [Aggregation With Array](#aggregation-with-array)
-  - [Composition With Publisher of Pair](#Composition-with-publisher-of-pair)
+  - [Composition With AnyPublisher of an Array of Pair](#composition-With-AnyPublisher-of-an-array-of-pair)
 
 # Kotlin
 ## Diagram Elements
@@ -233,7 +233,12 @@ struct Conversation {
 }
 ```
 
-## Composition With AnyPublisher of Pair
+## Composition With AnyPublisher of an Array of Pair
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/composition-anypublisher-array-of-pair.dark.svg">
+  <img alt="Composition With AnyPublisher of an Array of Pair" src="./res/swift/composition-anypublisher-array-of-pair.light.svg">
+</picture>
+
 ```swift
 struct ConversationsRepository {
     var contactWithLastMessageListPublisher: AnyPublisher<[(Contact, Message)], Never> {
