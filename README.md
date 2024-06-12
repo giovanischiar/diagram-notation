@@ -9,6 +9,7 @@
   - [Composition](#composition)
   - [Aggregation With `List`](#aggregation-with-list)
   - [Composition With `Flow` of a `List`](#composition-with-flow-of-a-list)
+  - [UI State Pattern](#ui-state-pattern)
 
 - [Swift](#swift)
   - [Diagram Elements](#diagram-elements-swift)
@@ -19,7 +20,7 @@
   - [Composition](#composition-swift)
   - [Aggregation With `Array`](#aggregation-with-array)
   - [Composition With `AnyPublisher` of an `Array` of `Pair`](#composition-With-AnyPublisher-of-an-array-of-pair)
-  - [UI State Pattern](#ui-state-pattern)
+  - [UI State Pattern](#ui-state-pattern-swift)
 
 # Kotlin
 ## Diagram Elements
@@ -124,6 +125,22 @@ data class Region(
 ```kotlin
 class AdministrativeUnitsRepository {
     private var administrativeUnits: List<AdministrativeUnit> = emptyList()
+}
+```
+
+## UI State Pattern
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/ui-state-pattern.dark.svg">
+  <img alt="UI State Pattern" src="./res/kotlin/ui-state-pattern.svg">
+</picture>
+
+```kotlin
+@Immutable
+sealed interface AdministrativeUnitsUiState {
+    data object Loading : AdministrativeUnitsUiState
+    data class AdministrativeUnitsLoaded(
+        val administrativeUnits: List<AdministrativeUnitViewData>,
+    ): AdministrativeUnitsUiState
 }
 ```
 
@@ -236,7 +253,7 @@ struct ConversationsRepository {
 }
 ```
 
-## UI State Pattern
+## UI State Pattern (swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/ui-state-pattern.dark.svg">
   <img alt="UI State Pattern" src="./res/swift/ui-state-pattern.svg">
