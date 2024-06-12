@@ -11,12 +11,12 @@
   - [Composition With Mutable Map](#composition-with-mutable-map)
   - [Composition With Pair of Set](#Composition-with-pair-of-set)
 - [Swift](#swift)
-  - [Diagram Elements](#diagram-elements)
-  - [Method Calling](#method-calling)
-  - [Screen/ViewModel Relationship](#screenviewmodel-relationship)
-  - [Implementation](#implementation)
-  - [Aggregation](#aggregation)
-  - [Composition](#composition)
+  - [Diagram Elements](#diagram-elements-swift)
+  - [Method Calling](#method-calling-swift)
+  - [Screen/ViewModel Relationship](#screenviewmodel-relationship-swift)
+  - [Implementation](#implementation-swift)
+  - [Aggregation](#aggregation-swift)
+  - [Composition](#composition-swift)
   - [Aggregation With Array](#aggregation-with-array)
   - [Composition With Publisher of Pair](#Composition-with-publisher-of-pair)
 
@@ -139,13 +139,13 @@ class MainRepository {
 ```
 
 # Swift
-## Diagram Elements
+## Diagram Elements (swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/diagram-elements.dark.svg">
   <img alt="Diagram Elements Diagram" src="./res/swift/diagram-elements.light.svg">
 </picture>
 
-## Method Calling
+## Method Calling (swift)
 
 ```swift
 class ConversationsViewModel: ObservableObject {
@@ -160,7 +160,7 @@ class ConversationsViewModel: ObservableObject {
 }
 ```
 
-## Screen/ViewModel Relationship
+## Screen/ViewModel Relationship (swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/screen-viewmodel-relationship.dark.svg">
   <img alt="Screen ViewModel Relationship" src="./res/swift/screen-viewmodel-relationship.light.svg">
@@ -183,19 +183,19 @@ struct Navigation {
 }
 ```
 
-## Implementation
+## Implementation (swift)
 ```swift
 class MessengerBluetoothDataSource: MessengerDataSource 
 ```
 
-## Aggregation
+## Aggregation (swift)
 ```swift
 struct Conversation {
     let contact: Contact
 }
 ```
 
-## Composition
+## Composition (swift)
 ```swift
 struct MessageViewData {
     let id: UUID = UUID()
