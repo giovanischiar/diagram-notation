@@ -146,6 +146,10 @@ class MainRepository {
 </picture>
 
 ## Method Calling (swift)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/method-calling.dark.svg">
+  <img alt="Method Calling Diagram" src="./res/swift/method-calling.light.svg">
+</picture>
 
 ```swift
 class ConversationsViewModel: ObservableObject {
