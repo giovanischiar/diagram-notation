@@ -189,6 +189,11 @@ class MessengerBluetoothDataSource: MessengerDataSource
 ```
 
 ## Aggregation (swift)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/aggregation.dark.svg">
+  <img alt="Aggregation Diagram" src="./res/swift/aggregation.light.svg">
+</picture>
+
 ```swift
 struct Conversation {
     let contact: Contact
