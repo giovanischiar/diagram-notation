@@ -1,7 +1,14 @@
 ### Diagram Elements
+## Kotlin
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/dark/diagram-elements.dark.svg">
   <img alt="Diagram Elements Diagram" src="./res/diagram-elements.light.svg">
+</picture>
+
+## Swift
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/diagram-elements-swift.dark.svg">
+  <img alt="Diagram Elements Diagram" src="./res/diagram-elements-swift.light.svg">
 </picture>
 
 ### Method Calling
