@@ -196,6 +196,11 @@ struct Conversation {
 ```
 
 ## Composition (swift)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/composition.dark.svg">
+  <img alt="Composition Diagram" src="./res/swift/composition.light.svg">
+</picture>
+
 ```swift
 struct MessageViewData {
     let id: UUID = UUID()
