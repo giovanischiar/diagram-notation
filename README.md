@@ -23,14 +23,14 @@
 # Kotlin
 ## Diagram Elements
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/diagram-elements.dark.svg">
-  <img alt="Diagram Elements Diagram" src="./res/diagram-elements.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/diagram-elements.dark.svg">
+  <img alt="Diagram Elements Diagram" src="./res/kotlin/diagram-elements.light.svg">
 </picture>
 
 ## Method Calling
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/method-calling.dark.svg">
-  <img alt="Method Calling Diagram Diagram" src="./res/method-calling.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/method-calling.dark.svg">
+  <img alt="Method Calling Diagram Diagram" src="./res/kotlin/method-calling.light.svg">
 </picture>
 
 ```kotlin
@@ -44,8 +44,8 @@ class AppViewModel(private val repository: AppRepository) : ViewModel {
 
 ## Screen/ViewModel Relationship
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/screen-viewmodel-relationship.dark.svg">
-  <img alt="Screen ViewModel Relationship" src="./res/screen-viewmodel-relationship.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/screen-viewmodel-relationship.dark.svg">
+  <img alt="Screen ViewModel Relationship" src="./res/kotlin/screen-viewmodel-relationship.light.svg">
 </picture>
 
 ```kotlin
@@ -70,8 +70,8 @@ fun NavGraphBuilder.administrativeUnitsScreen(/*..*/) {
 
 ## Implementation
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/implementation.dark.svg">
-  <img alt="Implementation Diagram" src="./res/implementation.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/implementation.dark.svg">
+  <img alt="Implementation Diagram" src="./res/kotlin/implementation.light.svg">
 </picture>
 
 ```kotlin
@@ -80,8 +80,8 @@ class MainRepository : HomeRepository { /*...*/ }
 
 ## Aggregation
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/aggregation.dark.svg">
-  <img alt="Aggregation Diagram" src="./res/aggregation.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/aggregation.dark.svg">
+  <img alt="Aggregation Diagram" src="./res/kotlin/aggregation.light.svg">
 </picture>
 
 ```kotlin
@@ -92,8 +92,8 @@ data class Region(
 
 ## Composition
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/composition.dark.svg">
-  <img alt="Composition Diagram" src="./res/composition.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/composition.dark.svg">
+  <img alt="Composition Diagram" src="./res/kotlin/composition.light.svg">
 </picture>
 
 ```kotlin
@@ -104,8 +104,8 @@ data class Address(
 
 ## Aggregation With List
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/aggregation-list.dark.svg">
-  <img alt="Aggregation With List Diagram" src="./res/aggregation-list.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/aggregation-list.dark.svg">
+  <img alt="Aggregation With List Diagram" src="./res/kotlin/aggregation-list.light.svg">
 </picture>
 
 ```kotlin
@@ -116,8 +116,8 @@ data class Region(
 
 ## Composition With Mutable Map
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/composition-mutable-map.dark.svg">
-  <img alt="Composition With Mutable Map Diagram" src="./res/composition-mutable-map.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/composition-mutable-map.dark.svg">
+  <img alt="Composition With Mutable Map Diagram" src="./res/kotlin/composition-mutable-map.light.svg">
 </picture>
 
 ```kotlin
@@ -128,8 +128,8 @@ class MainRepository {
 
 ## Composition With Pair of Set
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/composition-pair-set.dark.svg">
-  <img alt="Composition With Pair of Set Diagram" src="./res/composition-pair-set.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/kotlin/dark/composition-pair-set.dark.svg">
+  <img alt="Composition With Pair of Set Diagram" src="./res/kotlin/composition-pair-set.light.svg">
 </picture>
 
 ```kotlin
@@ -141,8 +141,8 @@ class MainRepository {
 # Swift
 ## Diagram Elements
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/diagram-elements-swift.dark.svg">
-  <img alt="Diagram Elements Diagram" src="./res/diagram-elements-swift.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/diagram-elements-swift.dark.svg">
+  <img alt="Diagram Elements Diagram" src="./res/swift/diagram-elements-swift.light.svg">
 </picture>
 
 ## Method Calling
@@ -199,8 +199,8 @@ struct MessageViewData {
 
 ## Aggregation With Array
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/dark/aggregation-list-swift.dark.svg">
-  <img alt="Aggregation With List Diagram Swift" src="./res/aggregation-list-swift.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/aggregation-list-swift.dark.svg">
+  <img alt="Aggregation With List Diagram Swift" src="./res/swift/aggregation-list-swift.light.svg">
 </picture>
 
 ```swift
