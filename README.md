@@ -76,7 +76,7 @@ fun NavGraphBuilder.administrativeUnitsScreen(/*..*/) {
 </picture>
 
 ```kotlin
-class MainRepository : HomeRepository { /*...*/ }
+class ImageRoomDataSource : ImageDataSource { /*...*/ }
 ```
 
 ## Aggregation
