@@ -141,8 +141,8 @@ class MainRepository {
 # Swift
 ## Diagram Elements
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/diagram-elements-swift.dark.svg">
-  <img alt="Diagram Elements Diagram" src="./res/swift/diagram-elements-swift.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/diagram-elements.dark.svg">
+  <img alt="Diagram Elements Diagram" src="./res/swift/diagram-elements.light.svg">
 </picture>
 
 ## Method Calling
@@ -161,6 +161,11 @@ class ConversationsViewModel: ObservableObject {
 ```
 
 ## Screen/ViewModel Relationship
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/screen-viewmodel-relationship.dark.svg">
+  <img alt="Screen ViewModel Relationship" src="./res/swift/screen-viewmodel-relationship.light.svg">
+</picture>
+
 ```swift
 struct Navigation {
   @EnvironmentObject var conversationViewModel: ConversationViewModel
@@ -199,8 +204,8 @@ struct MessageViewData {
 
 ## Aggregation With Array
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/aggregation-list-swift.dark.svg">
-  <img alt="Aggregation With List Diagram Swift" src="./res/swift/aggregation-list-swift.light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/aggregation-list.dark.svg">
+  <img alt="Aggregation With List Diagram Swift" src="./res/swift/aggregation-list.light.svg">
 </picture>
 
 ```swift
