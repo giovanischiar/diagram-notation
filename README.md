@@ -145,7 +145,7 @@ sealed interface AdministrativeUnitsUiState {
 ```
 
 # Swift
-## Diagram Elements (swift)
+## Diagram Elements (Swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/diagram-elements.dark.svg">
   <img alt="Diagram Elements Diagram" src="./res/swift/diagram-elements.light.svg">
@@ -170,7 +170,7 @@ class ConversationsViewModel: ObservableObject {
 }
 ```
 
-## Screen/ViewModel Relationship (swift)
+## Screen/ViewModel Relationship (Swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/screen-viewmodel-relationship.dark.svg">
   <img alt="Screen ViewModel Relationship" src="./res/swift/screen-viewmodel-relationship.light.svg">
@@ -193,7 +193,7 @@ struct Navigation {
 }
 ```
 
-## Implementation (swift)
+## Implementation (Swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/implementation.dark.svg">
   <img alt="Implementation Diagram" src="./res/swift/implementation.light.svg">
@@ -203,7 +203,7 @@ struct Navigation {
 class MessengerBluetoothDataSource: MessengerDataSource 
 ```
 
-## Aggregation (swift)
+## Aggregation (Swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/aggregation.dark.svg">
   <img alt="Aggregation Diagram" src="./res/swift/aggregation.light.svg">
@@ -215,7 +215,7 @@ struct Conversation {
 }
 ```
 
-## Composition (swift)
+## Composition (Swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/composition.dark.svg">
   <img alt="Composition Diagram" src="./res/swift/composition.light.svg">
@@ -253,7 +253,7 @@ struct ConversationsRepository {
 }
 ```
 
-## UI State Pattern (swift)
+## UI State Pattern (Swift)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/ui-state-pattern.dark.svg">
   <img alt="UI State Pattern" src="./res/swift/ui-state-pattern.svg">
