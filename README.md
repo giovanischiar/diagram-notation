@@ -87,7 +87,7 @@ class ImageRoomDataSource : ImageDataSource { /*...*/ }
 
 ```kotlin
 data class Region(
-   private val boundingBox : BoundingBox
+   val boundingBox: BoundingBox
 )
 ```
 
