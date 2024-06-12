@@ -19,6 +19,7 @@
   - [Composition](#composition-swift)
   - [Aggregation With `Array`](#aggregation-with-array)
   - [Composition With `AnyPublisher` of an `Array` of `Pair`](#composition-With-AnyPublisher-of-an-array-of-pair)
+  - [UI State Pattern](#ui-state-pattern)
 
 # Kotlin
 ## Diagram Elements
@@ -244,5 +245,18 @@ struct ConversationsRepository {
     var contactWithLastMessageListPublisher: AnyPublisher<[(Contact, Message)], Never> {
       /*...*/
     }
+}
+```
+
+## UI State Pattern
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./res/swift/dark/ui-state-pattern.dark.svg">
+  <img alt="UI State Pattern" src="./res/swift/ui-state-pattern.svg">
+</picture>
+
+```swift
+enum ContactWithLastMessageListUIState {
+    case loading
+    case contactWithLastMessageListLoaded([(ContactViewData, MessageViewData)])
 }
 ```
